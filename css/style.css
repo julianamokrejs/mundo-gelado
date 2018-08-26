@@ -1,0 +1,685 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito, Varela Round';
+    margin: 0;
+}
+
+.img_menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    z-index: 999;
+    background-color: #a0bed0;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    list-style: none;
+    margin-right: 7%;
+}
+
+.menu-item-link {
+    padding-right: 50%;
+    display: inline-block;
+}
+
+.menu-item-link:hover {
+    color: rgba(255, 255, 255, .75)
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Nunito';
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 8%;
+    background: url(../img/foto-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bloco-titulo {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-family: 'Varela Round';
+    margin: 0 auto;
+    color: white;
+}
+
+.bloco-subtitulo {
+    font-family: 'Nunito';
+    /* width: 30%; */
+    color: white;
+    margin: 5% auto %;
+}
+
+h1 {
+    margin-top: 12%;
+    margin-bottom: 3%;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
+.bloco-botao {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: center;
+    background-color: #829dad;
+    padding: 1%;
+    border-radius: 3px;
+    width: 20%;
+    height: 10%;
+    margin: 2% auto 5%;
+}
+
+.bloco-botao:hover {
+    background-color: #36b0e0;
+}
+
+.bloco-box {
+    text-align: center;
+    font-family: 'Nunito';
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    color: rgba(255,255,255,.5); 
+    background-color: black;
+}
+
+h3 {
+    margin-top: 0;
+    padding-top: 2%;
+    font-size: 26px;
+}
+
+p {
+    margin: 1% 15%;
+    font-size: 18px;
+}
+
+.p1 {
+    font-family: 'Nunito';
+    font-size: 22px;    
+    font-weight: 600;
+    letter-spacing: .0625em;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.p2 { 
+    font-family: 'Nunito';
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* border-left: 6px solid #36b0e0; */
+}
+
+.bloco-paises {
+    display: flex;
+    width: 960px;
+    justify-content: center;
+    background-color: #f8f9fa;
+
+}
+
+.bloco__paises-siberia {
+    display: flex;
+    font-family: 'Nunito, Varela Round';
+    margin: 7% 10%;
+}
+
+.bloco__paises-siberia-img {
+    width: 70%;
+    height: 40%;
+}
+
+.bloco__paises-siberia-texto {
+    width: 50%;
+    text-align: left;
+    margin-top: 7%;
+    color:black;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.bloco__paises-groenlandia {
+    display: flex;
+    font-family: 'Nunito, Varela Round';
+    background-color: #f8f9fa;
+    margin: 7% 10% 0 10%;
+}
+
+.bloco__paises-groenlandia-img {
+    width: 50%;
+    height: 33%;
+}
+
+.bloco__paises-groenlandia-texto {
+    width: 50%;
+    text-align: left;
+    color: white;
+    background-color: #161616;
+    padding-top: 11%;
+    padding-bottom: 5%;
+    margin-right: 0%;
+}
+
+.bloco__paises-antartida {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Nunito, Varela Round';
+    background-color: #f8f9fa;
+    margin: 0 10% 7% 10%;
+}
+
+.bloco__paises-antartida-img {
+    width: 50%;
+    height: 33%;
+}
+
+.bloco__paises-antartida-texto {
+    width: 50%;
+    text-align: right;
+    color: white;
+    background-color: #161616;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.bloco__contato {
+    width: 100%;
+    height: 370px;
+    text-align: center;
+    background-color: #161616;
+}
+
+.p3 {
+    font-family: 'Nunito';
+    font-size: 16px;
+    color: #a0bed0;
+    padding-top: 3%;
+}
+
+.p3:hover {
+    color: rgba(255, 255, 255, .75)
+}
+
+.bloco__contato-redes-sociais {
+    margin-top: 5%;
+}
+
+.p4 {
+    font-family: 'Varela Round';
+    font-size: 12px;
+    padding-top: 3%;
+    margin-bottom: 4%;
+    color: gray;
+}
+
+  @media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
+        z-index: 999;
+        background-color: #a0bed0;
+        height: 90px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu-item {
+        display: flex;
+        list-style: none;
+        margin-right: 2%;
+    }
+    
+    .menu-item-link {
+        padding-right: 70%;
+        display: inline-block;
+    }
+
+    .menu-item-link:hover {
+        color: rgba(255, 255, 255, .75)
+    }
+
+    .container {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 35rem;
+        padding: 8%;
+        background: url(../img/foto-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container__titulo {
+        text-transform: uppercase;
+        font-size: 80%;
+        font-family: 'Varela Round';
+        margin: 0 auto;
+        color: rgba(255,255,255,.5);
+    }
+    
+    .container__subtitulo {
+        font-family: 'Nunito';
+        /* width: 30%; */
+        color: rgba(255,255,255,.5);
+        margin: 0 auto;
+    }
+    
+    h1 {
+        margin-top: 20%;
+        margin-bottom: 0%;
+        font-size: 90px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+    
+    .bloco-botao {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: center;
+        background-color: #829dad;
+        padding: 2%;
+        border-radius: 3px;
+        width: 30%;
+        margin: 7% auto;
+        margin-bottom: 3%;
+    }
+    
+    .bloco-box {
+        text-align: center;
+        font-family: 'Nunito';
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        color: rgba(255,255,255,.5); 
+        background-color: black;
+        padding: 2%;
+    }
+    
+    h3 {
+        margin-top: 0;
+        margin-bottom: 1%;
+        padding-top: 1%;
+        font-size: 26px;
+    }
+
+    p {
+        margin: 0 10% 2% 10%;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+
+    p1 {
+        font-family: 'Nunito';
+        font-size: 14px;    
+        font-weight: 600;
+        letter-spacing: .0625em;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 3%;
+    
+    }
+    
+    .p2 { 
+        font-family: 'Nunito';
+        font-size: 12px;
+        margin-left: 5%;
+        margin-right: 5%;
+        /* border-left: 6px solid #36b0e0; */
+    }
+
+    .bloco-paises {
+        display: flex;
+        width: 960px;
+        justify-content: center;
+        background-color: #f8f9fa;
+    
+    }
+    
+    .bloco__paises-siberia {
+        display: flex;
+        font-family: 'Nunito, Varela Round';
+        margin: 7% 10%;
+    }
+    
+    .bloco__paises-siberia-img {
+        width: 70%;
+        height: 40%;
+    }
+    
+    .bloco__paises-siberia-texto {
+        width: 50%;
+        text-align: left;
+        margin-top: 5%;
+        color:black;
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+    
+    .bloco__paises-groenlandia {
+        display: flex;
+        font-family: 'Nunito, Varela Round';
+        background-color: #f8f9fa;
+        margin: 7% 10% 0 10%;
+    }
+    
+    .bloco__paises-groenlandia-img {
+        width: 50%;
+        height: 33%;
+    }
+    
+    .bloco__paises-groenlandia-texto {
+        width: 50%;
+        text-align: left;
+        color: gray;
+        background-color: #161616;
+        padding-top: 8%;
+        padding-bottom: 5%;
+        margin-right: 0%;
+    }
+    
+    .bloco__paises-antartida {
+        display: flex;
+        flex-direction: row-reverse;
+        font-family: 'Nunito, Varela Round';
+        background-color: #f8f9fa;
+        margin: 0 10% 7% 10%;
+    }
+    
+    .bloco__paises-antartida-img {
+        width: 50%;
+        height: 33%;
+    }
+    
+    .bloco__paises-antartida-texto {
+        width: 50%;
+        text-align: right;
+        color: grey;
+        background-color: #161616;
+        padding-top: 7%;
+        padding-bottom: 2%;
+    }
+    
+    .bloco__contato {
+        width: 100%;
+        height: 240px;
+        text-align: center;
+        background-color: #161616;
+    }
+    
+    .p3 {
+        font-family: 'Nunito';
+        font-size: 16px;
+        color: #a0bed0;
+        padding-top: 5%;
+    }
+    
+    .p3:hover {
+        color: rgba(255, 255, 255, .75)
+    }
+    
+    .bloco__contato-redes-sociais {
+        margin-top: 5%;
+    }
+    
+    .p4 {
+        font-family: 'Varela Round';
+        font-size: 12px;
+        padding-top: 4%;
+        margin-bottom: 4%;
+        color: gray;
+    }
+    
+    
+  }
+
+  @media (max-width: 420px) {
+    .img_menu {
+        width: 15%;
+        z-index: 999;
+    }
+
+    .navbar {
+        background-color: white;
+        width: 100%;
+        /*z-index: 999;*/
+        height: 10%;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .container {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 35rem;
+        padding: 8%;
+        background: url(../img/foto-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container__titulo {
+        text-transform: uppercase;
+        font-size: 80%;
+        font-family: 'Varela Round';
+        margin: 0 auto;
+        color: rgba(255,255,255,.5);
+    }
+    
+    .container__subtitulo {
+        font-family: 'Nunito';
+        /* width: 30%; */
+        color: rgba(255,255,255,.5);
+        margin: 0 auto;
+    }
+    
+    h1 {
+        margin-top: 40%;
+        margin-bottom: 0%;
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+    
+    .bloco-botao {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: center;
+        background-color: #829dad;
+        padding: 4%;
+        border-radius: 3px;
+        width: 50%;
+        margin: 15% auto;
+    }
+    
+    .bloco-box {
+        text-align: center;
+        font-family: 'Nunito';
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        color: rgba(255,255,255,.5); 
+        background-color: black;
+        margin-bottom: 10%;
+    }
+    
+    h3 {
+        margin-top: 2%;
+        margin-bottom: 02%;
+        padding-top: 2%;
+        font-size: 20px;
+    }
+
+    p {
+        margin: 0 10% 5% 10%;
+        padding-bottom: 2%;
+        font-size: 13px;
+    }
+
+    .p1 {
+        font-family: 'Nunito';
+        font-size: 14px;    
+        font-weight: 600;
+        /* letter-spacing: .0625em;
+        margin-left: 5%;
+        margin-right: 5%;     */
+        margin-bottom: 0;
+    }
+    
+    .p2 { 
+        font-family: 'Nunito';
+        font-size: 12px;
+        margin-left: 5%;
+        margin-right: 5%;
+        /* border-left: 6px solid #36b0e0; */
+        margin: 0;
+        padding: 0;
+    }
+
+    .bloco-paises {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        background-color: #f8f9fa;
+    }
+    
+    .bloco__paises-siberia {
+        display: block;
+        font-family: 'Nunito, Varela Round';
+        margin: 10% 10%;
+    }
+    
+    .bloco__paises-siberia-img {
+        width: 100%;
+        /* height: 40%; */
+    }
+    
+    .bloco__paises-siberia-texto {
+        width: 100%;
+        text-align: center;
+        color:black;
+    }
+    
+    .bloco__paises-groenlandia {
+        display: block;
+        font-family: 'Nunito, Varela Round';
+        background-color: #f8f9fa;
+        margin: 10% 10%;
+    }
+    
+    .bloco__paises-groenlandia-img {
+        width: 100%;
+        margin-bottom: 0;
+        /* height: 33%; */
+    }
+    
+    .bloco__paises-groenlandia-texto {
+        width: 100%;
+        height: 230px;
+        text-align: center;
+        color: gray;
+        background-color: #161616;
+        padding: 15% 10% 30% 10%;
+    }
+    
+    .bloco__paises-antartida {
+        display: block;
+        /* flex-direction: row-reverse; */
+        font-family: 'Nunito, Varela Round';
+        background-color: #f8f9fa;
+        margin: 0 10% 7% 10%;
+    }
+    
+    .bloco__paises-antartida-img {
+        width: 100%;
+        /* height: 33%; */
+    }
+    
+    .bloco__paises-antartida-texto {
+        width: 100%;
+        height: 230px;
+        text-align: center;
+        color: grey;
+        background-color: #161616;
+        padding: 15% 10% 30% 10%;
+    }
+    
+    .bloco__contato {
+        width: 100%;
+        height: 240px;
+        text-align: center;
+        background-color: #161616;
+    }
+    
+    .p3 {
+        font-family: 'Nunito';
+        font-size: 16px;
+        color: #a0bed0;
+        padding-top: 30%;
+    }
+    
+    .p3:hover {
+        color: rgba(255, 255, 255, .75)
+    }
+    
+    .bloco__contato-redes-sociais {
+        margin-top: 10%;
+    }
+    
+    .p4 {
+        font-family: 'Varela Round';
+        font-size: 12px;
+        /* padding-top: 10%;
+        margin-bottom: 4%; */
+        color: gray;
+    }
+    
+    
+  }
